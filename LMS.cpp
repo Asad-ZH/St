@@ -19,22 +19,22 @@ class LMS{
 		{
 			if(total==0)
 			{
-			cout<<"Enter the number of books that you want to enter their data : ";
+			cout<<"Enter the number of books for which you would like to enter their data : ";
 			cin>>choice;
 			total=total+choice;
 			for(int i=0;i<choice;i++)
 			{
 				
 				cout<<"Book "<<i+1<<endl;
-				cout<<"\tEnter the title or Name  of Book : ";
+				cout<<"\tEnter the title or name of the book : ";
 				cin>>Title[i];
-				cout<<"\tEnter the Name of Author : ";
+				cout<<"\tEnter the name of the author : ";
 				cin>>Author[i];
-				cout<<"\tEnter the Name of the student : ";
+				cout<<"\tEnter the name of the student : ";
 				cin>>name[i];
-				cout<<"\tEnter the Department of the student : ";
+				cout<<"\tEnter the department of the student : ";
 				cin>>dep[i];
-				cout<<"\tEnter the Roll Number of the student : ";
+				cout<<"\tEnter the roll number of the student : ";
 				cin>>roll_no[i];
 				
 			}
@@ -42,7 +42,7 @@ class LMS{
 		}
 		else
 		{
-		cout<<"Enter the number of books that you want to enter their data : ";
+		cout<<"Enter the number of books for which you would like to enter their data : ";
 		cin>>choice;
 			for(int i=total;i<total+choice;i++)
 			{
@@ -76,7 +76,7 @@ class LMS{
 		void sb()
 		{
 			string s;
-			cout<<"Enter the Title of the book that you want to search : ";
+			cout<<"Enter the title of the book that you wish to search for : ";
 			cin>>s;
 			for(int i=0;i<total;i++)
 			{
@@ -91,25 +91,25 @@ class LMS{
 		void ed()
 		{
 				string s;
-			cout<<"Enter the Title Name to edit  : ";
+			cout<<"Enter the title name to edit  : ";
 			cin>>s;
 			for(int i=0;i<total;i++)
 			{
 				if(s==Title[i])
 				{
-					cout<<"perivous Data"<<endl;
+					cout<<"Previous Data"<<endl;
 					 cout<<i+1<<"    "<<Title[i]<<"      "<<Author[i]<<"        "<<name[i]<<"           "<<dep[i]<<"        "<<roll_no[i]<<endl;
 		 		     
 		 		     cout<<"Enter New Data :"<<endl;
-		 		    cout<<"\tEnter the title or Name  of Book : ";
+		 		    cout<<"\tEnter the title or name of the book : ";
 				     cin>>Title[i];
-				     cout<<"\tEnter the Name of Author : ";
+				     cout<<"\tEnter the name of the author : ";
 				     cin>>Author[i];
-				     cout<<"\tEnter the Name of the student : ";
+				     cout<<"\tEnter the name of the student : ";
 				     cin>>name[i];
-				     cout<<"\tEnter the Department of the student : ";
+				     cout<<"\tEnter the department of the student : ";
 				     cin>>dep[i];
-			       	 cout<<"\tEnter the Roll Number of the student : ";
+			       	 cout<<"\tEnter the roll number of the student : ";
 				     cin>>roll_no[i];
 				     
 		 		     
@@ -161,7 +161,7 @@ cout<<endl;
 	}
 	else
 	{
-		cout<<"You enter invalid input pleace enter the number that correspond on the given choice\n"<<endl;
+		cout<<"You entered an invalid input. Please enter a number that corresponds to the given choice.\n"<<endl;
 	}
 }
 }
